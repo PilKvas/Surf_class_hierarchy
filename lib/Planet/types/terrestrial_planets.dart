@@ -1,10 +1,10 @@
 import 'package:dart_application_solar_system/Behavior/rotation.dart';
-import 'package:dart_application_solar_system/Planet/planet.dart';
+import 'package:dart_application_solar_system/planet/planet.dart';
 
 class TerrestrialPlanet extends Planet {
-  double density;
+  final double density;
 
-  TerrestrialPlanet({
+  const TerrestrialPlanet({
     required this.density,
     required String name,
     required double mass,
@@ -23,9 +23,9 @@ class TerrestrialPlanet extends Planet {
 }
 
 class Earth extends TerrestrialPlanet implements Rotation {
-  String satellite;
+  final String satellite;
 
-  Earth.info({required this.satellite})
+  const Earth.info({required this.satellite})
       : super(
             diameter: 12742,
             mass: 5972E21,
@@ -43,9 +43,9 @@ class Earth extends TerrestrialPlanet implements Rotation {
 }
 
 class Mars extends TerrestrialPlanet implements Rotation {
-  List<String> satellite;
-  double olimpHeight;
-  Mars.info({required this.satellite, required this.olimpHeight})
+ final List<String> satellite;
+ final double olimpHeight;
+  const Mars.info({required this.satellite, required this.olimpHeight})
       : super(
             diameter: 12742,
             mass: 5972E21,
@@ -63,9 +63,9 @@ class Mars extends TerrestrialPlanet implements Rotation {
 }
 
 class Mercury extends TerrestrialPlanet implements Rotation {
-  double yearRotation;
+  final double yearRotation;
 
-  Mercury.info({required this.yearRotation})
+  const Mercury.info({required this.yearRotation})
       : super(
             diameter: 12742,
             mass: 5972E21,
@@ -83,9 +83,9 @@ class Mercury extends TerrestrialPlanet implements Rotation {
 }
 
 class Venus extends TerrestrialPlanet implements Rotation {
-  String directionOfRotating;
+  final String directionOfRotating;
 
-  Venus.info({required this.directionOfRotating})
+  const Venus.info({required this.directionOfRotating})
       : super(
             diameter: 12742,
             mass: 5972E21,

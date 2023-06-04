@@ -1,10 +1,10 @@
 import 'package:dart_application_solar_system/Behavior/rotation.dart';
-import 'package:dart_application_solar_system/Planet/planet.dart';
+import 'package:dart_application_solar_system/planet/planet.dart';
 
 class GasGiant extends Planet {
-  List<String> moons;
+  final List<String> moons;
 
-  GasGiant({
+  const GasGiant({
     required this.moons,
     required String name,
     required double mass,

@@ -1,5 +1,5 @@
-import 'package:dart_application_solar_system/Planet/GasGiant/gas_giants.dart';
-import 'package:dart_application_solar_system/Planet/TerrestrialPlanet/terrestrial_planets.dart';
+import 'package:dart_application_solar_system/planet/types/gas_giants.dart';
+import 'package:dart_application_solar_system/planet/types/terrestrial_planets.dart';
 
 main() {
   Earth terraPlanet = Earth.info(satellite: "moon");

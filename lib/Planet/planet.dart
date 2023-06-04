@@ -5,7 +5,7 @@ abstract class Planet {
   final double gravity;
   final double avgTemp;
   final double rotationSpeed;
-  Planet(
+  const Planet(
       {required this.rotationSpeed,
       required this.name,
       required this.mass,
